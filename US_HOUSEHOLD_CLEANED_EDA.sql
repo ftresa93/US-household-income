@@ -158,6 +158,16 @@ GROUP BY u.State_name
 ORDER BY 3 DESC 
 LIMIT 10;
 
+#TOP 10 STD. DEV. HOUSEHOLD INCOME BY STATES
+SELECT u.State_name, ROUND(AVG(stdev),2)
+FROM us_household_income u
+JOIN us_household_income_statistics us
+ON u.id= us.id
+WHERE Mean <>0
+GROUP BY u.State_name
+ORDER BY 2 DESC 
+LIMIT 10;
+
 # MEAN HOUSEHOLD INCOME BY TYPE
 SELECT Type,COUNT(type),ROUND(AVG(Mean),2), ROUND(AVG(Median),2)
 FROM us_household_income u
