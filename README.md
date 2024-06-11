@@ -7,7 +7,7 @@
 - [Tools Used](#tools-used)
 - [Data Processing](#data-processing)
 - [Data Visualization](#data-visualization)
-- [Findings](#findings)
+- [Result](#result)
 - [References](#references)
 
 ### Project Overview: 
@@ -27,7 +27,7 @@ The primary datasets used for the analysis are "USHouseholdIncome.csv" and "USHo
 ### Data Processing:
 
 #### Database Creation and Data Import:
-A MySQL database named "us_household_income_data" was created and then "USHouseholdIncome.csv" and "USHouseholdIncome_Statistics.csv" datasets were imported into the database.
+A MySQL database "us_household_income_data" was created to import datasets "USHouseholdIncome.csv" and "USHouseholdIncome_Statistics.csv".
 #### Data Cleaning and Preparation: 
 - Removing Duplicates
 - Handling Missing and Null Values
@@ -50,16 +50,12 @@ The cleaned dataset underwent exploratory data analysis in MySQL to uncover init
 Post-EDA, the cleaned dataset was exported to Tableau for advanced data visualization, facilitating a more intuitive understanding of life expectancy trends and health factors across the selected countries.
 [Tableau Dashboard](https://public.tableau.com/views/USHOUSEHOLDINCOMEDASHBOARD/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
 
-### Findings:
+### Result:
 
 The analysis findings can be summarised as follows:
--  Life expectancy has increased over the 15 years in both developed and developing countries.
--  There is a positive and strong correlation between GDP and Life expectancy.
--  With a higher schooling period there seems to be higher life expectancy.
--  Most of the developed countries seem to have high BMI with high life expectancy. This could be due to higher quality health care provided.
--  The average number of infant and under-five deaths has decreased over the 15 years, reflecting the global improvements in healthcare provision and accessibility.
+-  .
 
 ### References:
 
-1. Golden Oak Research Group, LLC. “U.S. Income Database Kaggle”. Publication: 5, August 2017. Accessed-1, June 2024.
+1. Golden Oak Research Group, LLC. “U.S. Income Database Kaggle”. Publication: 5, August 2017. Accessed on 1, June 2024.
 2. Analyst builder
