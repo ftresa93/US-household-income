@@ -12,13 +12,12 @@
 
 ### Project Overview: 
 
-To analyze the life expectancy and associated factors of 183 countries over the period from 2007 to 2022, utilizing data from the World Health Organization (WHO) and economic data from the United Nations.
+To analyze the US household income, the database contains 32,000 records on US Household Income Statistics & Geo Locations. 
 
 ### Data Sources:
 
-The primary dataset used for the analysis "WorldLifeExpectancy.csv" contains information from sources:
-- World Health Organization (WHO): The Global Health Observatory (GHO) data repository tracks health status and various related factors for all countries. The life expectancy and health factors dataset for 193 countries was obtained from this repository.
-- United Nations: Corresponding economic data for the countries were collected from the United Nations website.
+The primary datasets used for the analysis are "USHouseholdIncome.csv" and "USHouseholdIncome_Statistics.csv", which contain information from the source- Golden Oak Research Group, LLC. “U.S. Income Database Kaggle”. 
+
 
 ### Tools Used:
 
@@ -28,28 +27,28 @@ The primary dataset used for the analysis "WorldLifeExpectancy.csv" contains inf
 ### Data Processing:
 
 #### Database Creation and Data Import:
-A MySQL database named "World Life Expectancy" was created and then later dataset was imported into the database.
+A MySQL database named "us_household_income_data" was created and then "USHouseholdIncome.csv" and "USHouseholdIncome_Statistics.csv" datasets were imported into the database.
 #### Data Cleaning and Preparation: 
 - Removing Duplicates
-- Handling Missing and Null Values- It was identified that data for 10 countries were only available for a single year. These incomplete records were removed, resulting in a refined dataset encompassing 183 countries.
+- Handling Missing and Null Values
 - Standardizing Data types 
 
 #### Exploratory Data Analysis (EDA): 
 
-The cleaned dataset underwent exploratory data analysis in MySQL to uncover initial patterns and insights. Some of the questions asked were:
-1. Average life expectancy over the years?
-2. The life expectancy from 2007 to 2022 over 15 years for all the countries?
-3. Relation between Life Expectancy and GDP?
-4. Relation between Life Expectancy and Status of the Countries -Developed or Developing?
-5. Relation between Life Expectancy and BMI?
-6. Relation between Life Expectancy, Adult Mortality and Infants Death?
-7. Relation between Life Expectancy, Average Thinness 1-19 years and Schooling for Children?
+The cleaned dataset underwent exploratory data analysis in MySQL to uncover initial patterns and insights.
+1. Top 10 states by Area of Land?
+2. Top 10 states by Area of Water?
+3. Top 10 states by Average household income? 
+4. Top 10 states by Median household income? 
+5. Top 10 states by Standard deviation household income? 
+6. Average and median household income differentiated by Type of geographic location?
+7. Top 10 cities by Average household income? 
    
 
 ### Data Visualization:
 
 Post-EDA, the cleaned dataset was exported to Tableau for advanced data visualization, facilitating a more intuitive understanding of life expectancy trends and health factors across the selected countries.
-[Tableau Dashboard](https://public.tableau.com/app/profile/feba.francis/viz/WORLDLIFEEXPECTANCYDASHBOARD/Dashboard1)
+[Tableau Dashboard](https://public.tableau.com/views/USHOUSEHOLDINCOMEDASHBOARD/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
 
 ### Findings:
 
@@ -62,5 +61,5 @@ The analysis findings can be summarised as follows:
 
 ### References:
 
-1. Kaggle-[Life Expectancy](https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who)
-2.  Analyst builder
+1. Golden Oak Research Group, LLC. “U.S. Income Database Kaggle”. Publication: 5, August 2017. Accessed-1, June 2024.
+2. Analyst builder
